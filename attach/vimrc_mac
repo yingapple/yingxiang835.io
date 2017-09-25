@@ -1,0 +1,177 @@
+    " Configuration file for vim
+set modelines=0     " CVE-2007-2438
+
+"Normally we use vim-extensions. If you want true vi-compatibility
+"remove change the following statements
+set nocompatible    " Use Vim defaults instead of 100% vi compatibility
+set backspace=2     " more powerful backspacing
+
+" Don't write backup file if vim is being called by "crontab -e"
+au BufWrite /private/tmp/crontab.* set nowritebackup
+" Don't write backup file if vim is being called by "chpass"
+au BufWrite /private/etc/pw.* set nowritebackup
+
+if has("syntax")
+    syntax on
+endif
+
+set ignorecase
+set incsearch
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
+set showmatch
+set cindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set shellslash
+set grepprg=grep\ -nH\ $*
+set foldmethod=manual
+set foldlevelstart=99999999
+"set list
+"set listchars=tab:\|\ ,
+setlocal foldlevel=1
+filetype indent on
+filetype on
+syntax on
+filetype plugin on
+set nu
+set autoindent
+set autoread
+set autowrite
+syntax enable
+"let g:solarized_termcolors=16
+"colorscheme solarized
+"set background=dark
+"let g:solarized_termcolors=256
+
+
+let g:miniBufExplMapWindowNavVim = 1 
+let g:miniBufExplMapWindowNavArrows = 1 
+let g:miniBufExplMapCTabSwitchBufs = 1 
+let g:miniBufExplModSelTarget = 1 
+
+let g:neocomplcache_enable_at_startup = 1 
+let g:neocomplcache_enable_auto_select = 1
+
+"key maps
+
+"nmap <C-k> <C-w>k
+"nmap <C-j> <C-w>j
+"nmap <C-h> <C-w>h
+"nmap <C-l> <C-w>l
+
+nmap _ :bp<CR>
+nmap + :bn<CR>
+
+nnoremap o o<Esc>
+nnoremap O O<Esc>
+noremap H ^
+noremap L $
+noremap $ L
+noremap ^ H
+
+map <F2> :res +5<CR>
+map <F3> :res -5<CR>
+map <F4> :vertical res +5<CR>
+map <F5> :vertical res -5<CR>
+
+vmap <C-c> y:call system("pbcopy", getreg("\""))<CR>
+nmap <C-v> :call setreg("\"", system("pbpaste"))<CR>p
+imap <C-v> <Esc>:call setreg("\"", system("pbpaste"))<CR>pa
+
+nnoremap x :AutoXDelete<CR>
+
+nmap <silent> <c-n> :NERDTreeToggle<CR>
+
+"EasyMotion
+:let mapleader=","
+let g:EasyMotion_leader_key = '<Leader>'
+
+:inoremap ( ()<ESC>i
+:inoremap ) <c-r>=ClosePair(')')<CR>
+:inoremap { {}<ESC>i
+:inoremap } <c-r>=ClosePair('}')<CR>
+:inoremap [ []<ESC>i
+:inoremap ] <c-r>=ClosePair(']')<CR>
+:inoremap <CR> <CR>;<ESC>:AutoBreak<CR>"_cl
+:inoremap <BS> <ESC>:AutoBSDelete<CR>a
+
+"TList
+nnoremap <c-x> :TlistToggle<CR>
+let Tlist_Show_One_File=1
+let Tlist_Exit_OnlyWindow=1
+let Tlist_Use_Right_Window=1
+let Tlist_Sort_Type='name'
+let Tlist_Use_SingleClick=1
+let Tlist_GainFocus_On_ToggleOpen=1
+
+"vim-latex
+let g:tex_flavor='latex'
+
+"functions
+
+function ClosePair(char)
+if getline('.')[col('.') - 1] == a:char
+return "\<Right>"
+else
+return a:char
+endif
+endf
+
+command! AutoXDelete call AutoXDelete()
+function! AutoXDelete()
+if ((getline('.')[col('.') - 1] == '(') && (getline('.')[col('.')] == ')')) || ((getline('.')[col('.') - 1] == '[') && (getline('.')[col('.')] == ']')) || ((getline('.')[col('.') - 1] == '{') && (getline('.')[col('.')] == '}'))
+    execute "normal! xx"
+else
+    execute "normal! x"
+endif
+endfunction
+
+command! AutoBSDelete call AutoBSDelete()
+function! AutoBSDelete()
+if ((getline('.')[col('.') - 1] == '(') && (getline('.')[col('.')] == ')')) || ((getline('.')[col('.') - 1] == '[') && (getline('.')[col('.')] == ']')) || ((getline('.')[col('.') - 1] == '{') && (getline('.')[col('.')] == '}'))
+    execute "normal! la\<BS>\<BS>"
+else
+    execute "normal! a\<BS>"
+endif
+endfunction
+
+command! AutoBreak call AutoBreak()
+function! AutoBreak()
+if (getline('.')[col('.')] == '}')
+    execute "normal! cl\<ESC>kA\<CR>;"
+endif
+endfunction
+
+"set vundle
+
+"set rtp+=/usr/share/vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gmarik/Vundle.vim'
+
+"plugins
+
+Plugin 'EasyMotion'
+Plugin 'The-NERD-tree'
+Plugin 'The-NERD-Commenter'
+Plugin 'bufexplorer.zip'
+Plugin 'minibufexpl.vim'
+Plugin 'sudo.vim'
+Plugin 'neocomplcache'
+Plugin 'taglist.vim'
+Plugin 'surround.vim'
+Plugin 'LaTeX-Suite-aka-Vim-LaTeX'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'bufkill.vim'
+Plugin 'a.vim'
+
+Plugin 'JavaScript-syntax'
+
+call vundle#end()
+filetype plugin indent on

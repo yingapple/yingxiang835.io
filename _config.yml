@@ -1,1 +1,80 @@
-theme: jekyll-theme-tactile
+# Site settings
+title: YX
+SEOTitle: 应翔的博客 | YX Blog
+header-img: img/home-bg-backup.jpg
+email: yingxiang835@gmail.com
+description: "这是一个新的开始"
+keyword: ""
+url: "http://yxthu.com"              # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: false
+#weibo_username:     zhuhan1236
+#zhihu_username:     zhuhan10
+github_username:    yingxiang835
+#twitter_username:  huxpro
+#facebook_username:  huxpro
+
+
+
+# Build settings
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# Disqus settings
+#disqus_username: _your_disqus_short_name_
+
+# Duoshuo settings
+duoshuo_username: yingxiang
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 775d8907a59beaf938ab852ad692a4bb
+# Google Analytics
+ga_track_id: 'UA-87401495-2'            # Format: UA-xxxxxx-xx
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "大吉大利，今晚吃鸡"
+sidebar-avatar: /img/avatar-yx.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Friends
+friends: [
+    {
+        title: "Zhu Han's Blog",
+        href: "http://zhuhan.me"
+    }
+]
