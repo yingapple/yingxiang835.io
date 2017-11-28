@@ -76,5 +76,9 @@ friends: [
     {
         title: "Zhu Han's Blog",
         href: "http://zhuhan.me"
+    },
+    {
+    	title: "Chen Jun's Blog",
+    	href: "chenjun082.github.io"
     }
 ]
