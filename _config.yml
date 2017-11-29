@@ -3,11 +3,10 @@ title: YX
 SEOTitle: 应翔的博客 | YX Blog
 header-img: img/home-bg-backup.jpg
 email: yingxiang835@gmail.com
-description: "这是一个新的开始"
+description: 心怀正义
 keyword: "应翔,博客,blog,清华"
 url: "http://yxthu.com"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
-
 
 
 # SNS settings
@@ -60,7 +59,7 @@ ga_track_id: 'UA-87401495-2'            # Format: UA-xxxxxx-xx
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "大吉大利，今晚吃鸡"
+sidebar-about-description: "脚踏实地，志存高远"
 sidebar-avatar: /img/avatar-yx.jpeg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
