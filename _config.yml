@@ -35,7 +35,7 @@ anchorjs: true                          # if you want to customize anchor. check
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
+  math_engine: mathjax
 
 
 # Disqus settings
