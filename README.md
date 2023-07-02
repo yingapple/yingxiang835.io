@@ -1,69 +1,29 @@
-<p align="center">
-    <h2 align="center">Indigo Minimalist Jekyll Template - <a href="https://sergiokopplin.github.io/indigo/">Demo</a></h2>
-</p>
+# Xiang Ying's Personal Homepage
 
-<p align="center">This is a simple and minimalist template for Jekyll for those who likes to eat noodles.</p>
+## Overview
 
-***
+Welcome to the GitHub repository of Xiang Ying! This repository is primarily a personal webpage, serving as a virtual space for thoughts, ideas, and technical musings. Feel free to browse and engage in thought-provoking discussions!
 
-<p align="center">
-    <b><a href="README.md#what-has-inside">What has inside</a></b>
-    |
-    <b><a href="README.md#setup">Setup</a></b>
-    |
-    <b><a href="README.md#settings">Settings</a></b>
-    |
-    <b><a href="README.md#how-to">How to</a></b>
-</p>
+This project is forked from [sergiokopplin/indigo](https://github.com/sergiokopplin/indigo). Many thanks to [Sergio Kopplin](https://github.com/sergiokopplin) for the original project which has served as a starting point for this personal page.
 
-<p align="center">
-    Light and Dark themes.
-</p>
+## Contents
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/sergiokopplin/indigo/gh-pages/assets/screen-shot.png" />
-</p>
+The repository is structured as follows:
 
-## What has inside
+- **Personal Thoughts**: This section is all about sharing thoughts and opinions on various topics. Xiang Ying likes to think, reflect and engage with his thoughts, and this section is a testament to that.
 
-- [Jekyll](https://jekyllrb.com/), [Sass](https://sass-lang.com/) ~[RSCSS](https://rscss.io/)~ and [SVG](https://www.w3.org/Graphics/SVG/);
-- Google Speed: [98/100](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fsergiokopplin.github.io%2Findigo%2F);
-- No JS. :sunglasses:
+- **Technical Musings**: Here, Xiang Ying shares his insights and experiences in the field of technology. Whether it's about latest tech trends, programming, data science, or any other tech-related topics, you'll find it here.
 
-## Setup
+## Contributing
 
-0. :star: to the project. :metal:
-1. Fork the project [Indigo](https://github.com/sergiokopplin/indigo/fork)
-2. Edit `_config.yml` with your data (check <a href="README.md#settings">settings</a> section)
-3. Write some posts :bowtie:
+Although this repository primarily represents Xiang Ying's personal perspective, input and discussions from others are highly encouraged. If you find any topic interesting and want to share your thoughts, feel free to open an issue or submit a pull request.
 
-If you want to test locally on your machine, do the following steps also:
+## Contact
 
-1. Install [Jekyll](https://jekyllrb.com) and [Bundler](https://bundler.io/).
-2. Clone the forked repo on your machine
-3. Enter the cloned folder via terminal and run `bundle install`
-4. Then run `bundle exec jekyll serve`
-5. Open it in your browser: `http://localhost:4000`
-6. Do you want an admin panel to edit your posts? You can install this plugin [jekyll-admin](https://jekyll.github.io/jekyll-admin/).
+Should you wish to reach Xiang Ying for any reason, please do not hesitate to open an issue on GitHub. Alternatively, you can reach out to him directly via his email (provided in his GitHub profile).
 
-## Settings
-
-You must fill some informations on `_config.yml` to customize your site.
-
-```
-name: John Doe
-bio: 'A Man who travels the world eating noodles'
-picture: 'assets/images/profile.jpg'
-...
-
-and lot of other options, like width, projects, pages, read-time, tags, related posts, animations, multiple-authors, etc.
-```
-
-## How To?
-
-Check the [FAQ](./FAQ.md) if you have any doubt or problem.
+Thank you for visiting and happy exploring!
 
 ---
-## License
 
-[MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
+_This README is last updated on July 2, 2023._
