@@ -4,42 +4,20 @@ layout: page
 ---
 ![Profile Image]({% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %})
 
-<p>Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h1>应翔(Noll Ying)</h1>
+<hr>
+<h2>关于我</h2>
+<p>我是一位AI与大数据领域的探索者，始于2010年在清华大学获得本科学位，于2017年硕士毕业。</p>
+<p>毕业后，我在华为的2B AI和Big Data团队中担任了Tech Leader与高级工程师的角色。我所领导的团队（包含莫斯科的成员）成功地完成了多个省级单位的AI项目。</p>
+<p>2020年，我加入阿里云，担任Algorithm Expert。在阿里，我主导Neuro-symbolic AI架构的开发，负责前沿技术探索、Cloud Service的实施、PoC的外展展示，以及推动内部的合作项目。</p>
+<p>从2022年开始，我担任Mindverse的Co-founder与AI VP。在Mindverse，我引导团队开发了独立的UMM框架，这是一种真正场景可落地的Autonomous Agent框架，并在此基础上推出了MindOS产品。我一直以来致力于推动团队表现与技术革新，我期待在未来能继续在这个充满挑战与机遇的领域中贡献自己的力量。</p>
+<br>
+<hr>
+<h2>About Me</h2>
+<p>I am an explorer in the field of AI and Big Data, beginning my academic journey in 2010 at Tsinghua University where I obtained my undergraduate degree, and graduated with a Master's degree in 2017.</p>
+<p>Post-graduation, I joined the 2B AI and Big Data team at Huawei as a Tech Leader and Senior Engineer. The team I led, which included colleagues from Moscow, successfully completed several provincial AI projects.</p>
+<p>In 2020, I joined Alibaba Cloud as an Algorithm Expert. There, I spearheaded the development of the Neuro-symbolic AI architecture, overseeing cutting-edge technological exploration, implementation of cloud services, showcasing PoCs externally, and promoting internal collaboration projects.</p>
+<p>From 2022 onward, I serve as the Co-founder and AI VP at Mindverse. At Mindverse, I guide the team in the development of an independent UMM framework. This is a truly actionable Autonomous Agent framework, on which we've launched our MindOS product. Throughout my career, I have dedicated myself to enhancing team performance and driving technical innovation. I look forward to continuing to contribute to this challenging and opportunity-rich field in the future. I am a deep, pioneering AI practitioner who is always pushing the boundaries of the industry.</p>
 
-<h2>Skills</h2>
 
-<ul class="skill-list">
-	<li>HTML - Jade - Haml - Erb</li>
-	<li>Responsive (Mobile First)</li>
-	<li>CSS (Stylus, Sass, Less)</li>
-	<li>Css Frameworks (Bootstrap, Foundation)</li>
-	<li>Javascript (Design Patterns, Testes)</li>
-	<li>AngularJS - ReactJS</li>
-	<li>Grunt - Gulp - Yeoman</li>
-	<li>Git</li>
-	<li>PHP</li>
-	<li>Python</li>
-	<li>MySQL - MongoDB</li>
-	<li>Scrum and Kanban</li>
-	<li>TDD e Continuous Integration</li>
-</ul>
-
-<h2>Projects</h2>
-
-<ul>
-	<li><a href="https://github.com/">Lorem Lorem</a></li>
-	<li><a href="https://github.com/">Ipsum Dolor</a></li>
-	<li><a href="https://github.com/">Dolor Lorem</a></li>
-</ul>
