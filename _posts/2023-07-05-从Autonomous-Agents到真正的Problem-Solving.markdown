@@ -2,7 +2,7 @@
 title: "从 Autonomous Agents 到真正的Problem Solving"
 layout: post
 date: 2023-07-05 22:20
-image: /assets/images/markdown.jpg
+# image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - Agent
