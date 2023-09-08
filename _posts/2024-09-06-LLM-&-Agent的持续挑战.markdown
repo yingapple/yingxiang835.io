@@ -12,8 +12,6 @@ author: Xiang Ying
 description: 
 ---
 
-**LLM & Agent的Next Step**
-
 距离Chatgpt正式发布不足一年，整个业界已经是有了天翻地覆的变化。
 
 首先是各路大模型出世，从闭源的Claude，到开源的Llama，中国国内的文心一言、百川模型等。
