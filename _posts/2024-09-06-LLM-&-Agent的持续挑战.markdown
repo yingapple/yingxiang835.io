@@ -33,9 +33,9 @@ description:
         1. 在LLM之外，增加可靠信息源（比如检索信息源），更进一步的，部分产品为了进一步提升grounding的能力，会指示大模型输出的时候增加引用，来更好的帮助使用者区分有据可依的部分和大模型凭空生成的部分。
         2. 利用更加复杂的思考模式，来进行更加可靠的推理：从COT到Self-Consistency，Tree-of-Thought，Self Reflection等。思考方式的示意图如下，图片来自[论文](https://arxiv.org/pdf/2305.10601.pdf)：
 
-<p align="center">
-  <img src="/assets/images/tot.png" alt="tot">
-</p>
+        <p align="center">
+             <img src="/assets/images/tot.png" alt="tot">
+        </p>
 
     2. LLM本身：如果在supervised training的环节里，模型能够看到所有的用户可能产生的问题，并且有ground truth（或者明确表示不知道）进行train，实际上也能降低幻觉。另外一个渠道是在RL的时候，通过rank model进行指导，对LLM align的目标进行调整。
 
@@ -43,9 +43,9 @@ description:
     1. Openai 的 GPT-4在最开始发布演示的时候就已经展示了多模态的理解能力，不过目前还没有正式对公众开放这一能力。
     2. Deepmind 的Flamingo，和智源的[EMU](https://arxiv.org/pdf/2307.05222.pdf)。这两个模型的模型结构和训练方案基本是公开的。能够应对第一阶段的一些图文混合的需求。
 
-<p align="center">
-  <img src="/assets/images/ewu.png" alt="ewu">
-</p>
+    <p align="center">
+        <img src="/assets/images/ewu.png" alt="ewu">
+    </p>
 
     3. 特斯拉的视觉大模型，严格意义上来说，不太属于多模态的大模型，更像是人对于视觉输入转换成动作的直觉映射。但是由于个人感觉这个模型的输入输出转化，是未来AGI的一个重要组成部分，所以暂时也放进来。
 
@@ -79,7 +79,7 @@ description:
     1. 上下文需要多元记录：对话上下文（当前session和历史对话）、技能执行上下文、知识上下文、用户Profile的上下文、Task执行上下文。并且上下文也包含了尺度，当Agent聚焦于局部任务时，最好的情况是注意力专注在局部上下文中。
     2. 为了解决有效上下文的提取，需要一个LLM时代的检索系统：最最本质的问题有两个 1）大模型的上下文窗口一定是有限的，而包括有价值的无价值的可用的信息是无限的；2）当上下文过多时，很容易造成注意力的紊乱，导致最后的推理效果不佳。为此，我们需要一个中间层来从大量驳杂的信息中提取出有效信息传递给底层大模型。
 
-显然，这里的检索不只是面对非结构化文本的检索，而是包括了历史对话记录，历史API结果，历史用户操作记录等等等等。目前在这方面，开源工具库Llama-Index算是走的比较前的探索者，但也远远未到解决问题的地步。下图是一个标准的LLM时代的信息检索标准解决方案（来自于https://mattboegner.com/knowledge-retrieval-architecture-for-llms/）：
+    显然，这里的检索不只是面对非结构化文本的检索，而是包括了历史对话记录，历史API结果，历史用户操作记录等等等等。目前在这方面，开源工具库Llama-Index算是走的比较前的探索者，但也远远未到解决问题的地步。下图是一个标准的LLM时代的信息检索标准解决方案（来自于https://mattboegner.com/knowledge-retrieval-architecture-for-llms/）：
 
 <p align="center">
   <img src="/assets/images/rag.png" alt="rag">
@@ -88,13 +88,13 @@ description:
 2. **全方位升级的人与Agent协作关系**。
     1. Agent与大模型的不同在于，大模型永远都只能被动的根据输入的prompt进行推理输出，而Agent是创造了整个思维运作体系。我们完全可以将Agent比作具备专业知识的特定职业专家，他的服务一定不是单纯被动响应的，而是存在主动发起的过程。并且服务形态也不应该仅限于对话框中的任务对接与同步执行，应该有全生命周期的服务。
 
-    举1个例子来说，Agent首先可以和我们共同读一本书，一起理解书中的内容，就一些点进行讨论。同时你可以安排一些定期的提醒任务给Agent，让其通知自己需要归还书籍。并且Agent还会在用户离线的情况下，持续的做用户交代的比如小说撰写的任务。
+        举1个例子来说，Agent首先可以和我们共同读一本书，一起理解书中的内容，就一些点进行讨论。同时你可以安排一些定期的提醒任务给Agent，让其通知自己需要归还书籍。并且Agent还会在用户离线的情况下，持续的做用户交代的比如小说撰写的任务。
 
     2. 另外一个重要的点是，目前的软件的形态其实已经做了比较好的用户路径优化，在一定程度上交互的效率比自然语言要高，所以Agent与用户的交互界面应该是GUI-Mituring的，多模态的。这样也增强了信息传递的效率。下图来自 mindos.com
 
-<p align="center">
-  <img src="/assets/images/mindos.png" alt="mindos">
-</p>
+    <p align="center">
+        <img src="/assets/images/mindos.png" alt="mindos">
+    </p>
 
 3. **进化，学习能力**
 
