@@ -12,8 +12,7 @@ category: blog
 author: Xiang Ying
 description: 多模态交互的Agent AI的论文翻译
 ---
-
-# AGENT AI: SURVEYING THE HORIZONS OF MULTIMODAL INTERACTION （中文翻译）
+# AGENT AI: SURVEYING THE HORIZONS OF MULTIMODAL INTERACTION
 
 # **ABSTRACT**
 
