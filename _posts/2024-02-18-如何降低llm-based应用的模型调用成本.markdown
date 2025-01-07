@@ -1,6 +1,7 @@
 ---
 title: "如何降低llm-based应用的模型调用成本"
 layout: post
+mathjax: true
 date: 2024-02-18 00:00
 # image: /assets/images/markdown.jpg
 headerImage: false
@@ -32,9 +33,9 @@ description: 探讨如何通过缓存、认知框架设计、模型选择和prom
 
 对于大模型调用开销来说，有几个要素，即模型种类，模型调用次数，调用模型的平均prompt长度，这些要素相乘即基本是最终开销：
 
-```latex
+$$
 cost = \sum_{i=1}^{n} (M_i \times C_i \times P_i)
-```
+$$
 
 其中：
 * n 表示模型的种类数目
@@ -85,9 +86,9 @@ cost = \sum_{i=1}^{n} (M_i \times C_i \times P_i)
 
 所以当实在无法找到10倍难度任务的时候，我们应该积极的选择gpt3.5。在这样的情况下，我们的成本可以这样表示：
 
-```latex
+$$
 B_{total} = B_{GPT4} \times N_1 + B_{GPT3.5} \times N_2 + N_{total} \times B_{small}
-```
+$$
 
 其中：
 * B_total 表示总成本

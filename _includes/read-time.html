@@ -1,9 +1,15 @@
 <span class="reading-time" title="Estimated read time">
-    {% assign words = content | number_of_words %}
+    {% assign words = content | strip_html | strip_newlines | size %}
+    {% assign zh_words = content | strip_html | strip_newlines | replace: " ", "" | replace: "\n", "" | replace: "\r", "" | replace: "\t", "" | size %}
+    
+    {% assign en_words = words | minus: zh_words | divided_by: 5 %}
+    {% assign zh_minutes = zh_words | divided_by: 400.0 %}
+    {% assign en_minutes = en_words | divided_by: 180.0 %}
+    {% assign total_minutes = zh_minutes | plus: en_minutes | round %}
 
-    {% if words < 360 %}
+    {% if total_minutes < 1 %}
         1 min
     {% else %}
-        {{ words | divided_by:180 }} mins
+        {{ total_minutes }} mins
     {% endif %}
 </span>
