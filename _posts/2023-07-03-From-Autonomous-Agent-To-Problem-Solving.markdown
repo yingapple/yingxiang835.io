@@ -5,12 +5,17 @@ date: 2023-07-03 22:20
 # image: /assets/images/markdown.jpg
 headerImage: false
 tag:
-- Agent
-- Domain Specific
-- AI
+- Autonomous Agents
+- AI Agents
+- LLM
+- Problem Solving
+- Artificial Intelligence
+- Machine Learning
+- Domain-Specific AI
+- AI Framework
 category: blog
-author: Xiang Ying
-description: 一些对Autonomous Agent Framework的观点
+author: 应翔
+description: 深入探讨 Autonomous Agent 框架的发展、挑战与解决方案，包括领域特定性、上下文管理、自我学习等关键问题的分析与实践经验分享
 ---
 
 

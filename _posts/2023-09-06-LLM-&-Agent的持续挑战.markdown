@@ -7,9 +7,17 @@ headerImage: false
 tag:
 - LLM
 - Agent
+- AI
+- 大语言模型
+- ChatGPT
+- 人工智能
+- 机器学习
+- AGI
+- 多模态AI
+- AI Agent
 category: blog
-author: Xiang Ying
-description: 
+author: 应翔
+description: 深入探讨大语言模型(LLM)和AI Agent面临的主要挑战，包括幻觉问题、多模态发展、推理效率、上下文管理等关键议题。文章全面分析了从底层模型到实际应用的各个层面，为AI领域的未来发展提供深刻见解。
 ---
 
 距离Chatgpt正式发布不足一年，整个业界已经是有了天翻地覆的变化。

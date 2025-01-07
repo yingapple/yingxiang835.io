@@ -6,11 +6,16 @@ date: 2023-07-15 00:00
 headerImage: false
 tag:
 - LLM
-- Context
-- Tools
+- Context Management
+- AI Chain
+- GPT
+- Prompt Engineering
+- AI System Design
+- Large Language Models
+- ChatGPT
 category: blog
-author: Xiang Ying
-description: 大模型的上下文管理应该有更加系统性的方案
+author: 应翔
+description: 深入探讨大模型（LLM）的上下文管理策略，分析OpenAI和ReAct方案的优劣，并提出新的多任务AI Chain管理架构，以解决当前大模型在复杂场景下的上下文管理问题。
 ---
 
 在大模型的时代，我们面临的一个重大挑战是如何有效地管理上下文，以及如何优化大模型使用外部API或者说AI Chain（带有LLM能力的工作流）的能力。这两个因素对于构建高效的人工智能系统至关重要。

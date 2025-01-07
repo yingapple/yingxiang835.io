@@ -1,14 +1,14 @@
 # main text of home
-title: Xiang Ying
-bio: An everyday person navigating the complex universe of Artificial Intelligence.
+title: 应翔 | Xiang Ying
+bio: Exploring the boundless frontier of Artificial Intelligence, shaping a smarter and more connected future.
 
 # twitter summary info
-description: A blog about life and Artificial Intelligence
+description: 探索AI技术与投资思维 | AI Technology and Investment Insights Blog - Personal reflections on artificial intelligence advancement and investment strategies
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/20230120-105019.jpeg
+picture: assets/images/IMG_3141.JPG
 
 # your site color theme, true for dark theme, 
 # false to light theme, auto to switch with system.
