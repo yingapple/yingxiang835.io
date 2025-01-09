@@ -69,6 +69,8 @@ blog: true
 # do you want to show the "read time" of the posts?
 read-time: true
 
+timezone: Asia/Shanghai
+
 # do you want to show the "tags" inside the posts?
 show-tags: true
 
